@@ -1,19 +1,39 @@
 {
-  "name": "chrometop",
+  "name": "next_ts_bizz_site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "autoprefixer": "10.4.14",
-    "next": "13.4.6",
-    "postcss": "8.4.24",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "@auth/mongodb-adapter": "^2.0.3",
+    "@auth/prisma-adapter": "^1.0.5",
+    "@prisma/client": "^5.5.2",
+    "daisyui": "^3.9.4",
+    "eslint-config-prettier": "^9.0.0",
+    "mongodb": "^6.2.0",
+    "next": "14.0.1",
+    "next-auth": "^4.24.4",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "postcss": "^8",
+    "prisma": "^5.5.2",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
