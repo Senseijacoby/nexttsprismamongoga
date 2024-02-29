@@ -1,3 +1,4 @@
+
 import PaginationBar from "@/components/PaginationBar";
 import ProductCard from "@/components/ProductCard";
 import { prisma } from "@/lib/db/prisma";
@@ -11,6 +12,7 @@ interface HomeProps {
 export default async function Home({
   searchParams: { page = "1" },
 }: HomeProps) {
+
   const currentPage = parseInt(page);
 
   const pageSize = 6;
